@@ -1,12 +1,12 @@
 'use strict';
 
 const totalCategories = document.querySelectorAll('.item');
-console.log(`В списке ${totalCategories.length} категории.`);
+console.log(`Number of categories: ${totalCategories.length}`);
 
 const categoriesArray = [...totalCategories]
   .map(
-    (categories) => `Категория: ${categories.children[0].textContent}
-Количество элементов: ${categories.children[1].children.length}`
+    (categories) => `Category: ${categories.children[0].textContent}
+Elements: ${categories.children[1].children.length}`
   )
   .join('\n');
 console.log(categoriesArray);
