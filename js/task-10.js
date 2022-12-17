@@ -31,5 +31,5 @@ btnCreate.addEventListener('click', () => {
 console.log(inputNum.value);
 
 btnDestroy.addEventListener('click', () => {
-  destroyBoxes.call();
+  destroyBoxes();
 });
